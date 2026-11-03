@@ -22,3 +22,86 @@
 /* Bookingflow */
 .booking-page{background:#f7f7f7;color:#222;font-family:Inter,Arial,sans-serif}.booking-container{width:min(calc(100% - 2rem),1060px);margin:auto}.booking-hero{padding:42px 0 28px;background:#f7f7f7}.eyebrow{margin:0 0 .7rem;color:#555;font-size:.65rem;letter-spacing:.08em}.booking-hero h1{margin:0 0 .45rem;font:600 2rem/1.1 Inter,Arial,sans-serif;color:#222}.booking-intro{margin:0;color:#666;font-size:.86rem}.demo-banner{margin-top:1rem;padding:.6rem .8rem;border:1px solid #b8b8b8;border-radius:4px;background:#fff;color:#333;font-size:.78rem}.booking-section{padding:0 0 3rem}.booking-steps{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;list-style:none;margin:0 0 13px;padding:0}.booking-steps button{width:100%;padding:.65rem .35rem;border:1px solid #c8c8c8;background:#fff;color:#222;text-align:left;font:600 .67rem Inter,Arial,sans-serif;cursor:pointer}.booking-steps .is-current button{border-color:#222;background:#222;color:#fff}.booking-steps button:disabled{cursor:not-allowed;opacity:.65}.booking-card{min-height:390px;padding:25px 28px;border:1px solid #ccc;border-radius:4px;background:#fff}.step-heading{position:relative;margin-bottom:1rem}.step-heading h2{margin:0 0 .35rem;color:#222;font:600 1rem Inter,Arial,sans-serif}.step-heading p{margin:0;color:#666;font-size:.72rem}.ticket-options{display:grid;gap:8px}.ticket-option{display:grid;grid-template-columns:42px 1fr auto;align-items:center;gap:12px;padding:9px;border:1px solid #d6d6d6;border-radius:4px;background:#fafafa}.ticket-placeholder{width:40px;height:34px;background:#e5e5e5}.ticket-option strong,.ticket-option small{display:block}.ticket-option strong{font-size:.77rem}.ticket-option small{margin-top:3px;color:#777;font-size:.6rem}.quantity{display:flex;align-items:center;gap:10px}.quantity button,.time-options button{min-width:30px;height:28px;border:1px solid #ccc;background:#fff;color:#222;cursor:pointer}.quantity output{min-width:10px;text-align:center;font-size:.75rem}.step-actions{display:flex;justify-content:space-between;gap:1rem;margin-top:1rem}.primary,.secondary,.test-data{border:1px solid #222;border-radius:3px;padding:.55rem .9rem;font:600 .72rem Inter,Arial,sans-serif;cursor:pointer}.primary{background:#222;color:#fff;text-decoration:none}.secondary,.test-data{background:#fff;color:#222}.two-column{display:grid;grid-template-columns:1.15fr 1fr;gap:34px}.calendar{padding:12px;border:1px solid #ddd;border-radius:3px;text-align:center;font-size:.65rem}.calendar-week{display:grid;grid-template-columns:repeat(7,1fr);margin:12px 0 5px;color:#555;font-size:.45rem}.calendar-days{display:grid;grid-template-columns:repeat(7,1fr);gap:4px}.calendar-days button{height:25px;border:1px solid #ddd;background:#fff;font-size:.6rem;cursor:pointer}.calendar-days button.selected,.time-options button.selected{background:#222;color:#fff;border-color:#222}.time-options{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}.time-options button{width:100%;height:32px}.selection-note{font-size:.72rem}.form-fields{display:grid;gap:6px;max-width:650px}.form-fields label,.payment-layout label{font-size:.68rem}.form-fields input,.payment-layout>div>input{width:100%;margin-bottom:9px;padding:.6rem;border:1px solid #ccc;border-radius:3px;font: .75rem Inter,Arial,sans-serif}.checkbox{display:flex;gap:7px;align-items:flex-start;margin-top:.3rem}.checkbox input{margin:0}.test-data{position:absolute;right:0;top:0;font-size:.58rem}.payment-choice{display:flex;gap:8px;align-items:center;margin:7px 0;padding:8px;border:1px solid #ddd;background:#fafafa}.payment-choice input{margin:0}.payment-choice span{font-size:.72rem}.payment-layout fieldset{border:0;padding:0;margin:0 0 1rem}.demo-label{color:#777;font-size:.58rem}.order-summary{padding:13px;border:1px solid #ccc;border-radius:3px;background:#f8f8f8}.order-summary h3{margin:0 0 .7rem;color:#222;font:600 .8rem Inter,Arial,sans-serif}.order-summary dl{margin:0;font-size:.62rem}.order-summary dl div{display:flex;justify-content:space-between;border-bottom:1px solid #ddd;padding:.25rem 0}.order-summary dd{margin:0}.order-summary p,.demo-note{font-size:.62rem;color:#555}.form-error{margin:1rem 0;color:#8b0000;font-weight:600}.confirmation{text-align:center}.confirmation h2{color:#222;font:600 1.1rem Inter,Arial,sans-serif}.confirmation>p{font-size:.72rem;color:#666}.confirmation .order-summary{width:min(100%,360px);margin:1rem auto;text-align:left}.check{width:44px;height:44px;margin:auto;border:1px solid #aaa;border-radius:50%;font-size:1.5rem;line-height:42px}.confirmation .button{display:inline-block}
 @media(max-width:760px){.booking-hero{padding-top:30px}.booking-hero h1{font-size:1.55rem}.booking-steps{grid-template-columns:1fr 1fr}.booking-steps li:last-child{grid-column:1/-1}.booking-card{padding:18px 14px}.two-column{grid-template-columns:1fr;gap:24px}.test-data{position:static;margin-top:.8rem}.payment-layout{gap:18px}.ticket-option{grid-template-columns:32px 1fr auto}.ticket-placeholder{width:32px}.booking-container{width:min(calc(100% - 1.5rem),600px)}}
+.booking-page :where(a,button,input,summary):focus-visible{outline:3px solid var(--navy);outline-offset:3px;box-shadow:0 0 0 5px var(--white)}
+.booking-page :where(.payment-choice,.checkbox):has(input:focus-visible){outline:3px solid var(--navy);outline-offset:3px;box-shadow:0 0 0 5px var(--white)}
+.booking-page .payment-choice{width:100%;border:1px solid #ddd;color:#222;font: .72rem Inter,Arial,sans-serif;text-align:left;cursor:pointer}
+.booking-page .payment-choice[aria-pressed="true"]{border-color:#222;background:#222;color:#fff}
+
+/* Typografisk korrektion: Creepster bevares til overskrifter, ikke brødtekst. */
+.hero-copy,.experience-copy,.intro-copy,.practical-intro-copy,.about-intro-copy,.history-copy,.team-copy,.values-copy,.faq-intro-copy{font-family:Antonio,Arial,sans-serif}
+.experience-copy{font-size:24px;line-height:1.45}
+.intro-copy{font-size:24px;line-height:1.45}
+.practical-intro-copy{font-size:24px;line-height:1.45}
+.about-intro-copy,.history-copy{font-size:20px;line-height:1.45}
+.team-copy,.values-copy{font-size:24px;line-height:1.45}
+.faq-intro-copy{font-size:20px;line-height:1.5}
+.booking-page,.faq-items details p,.contact-card p,.demo-note{font-family:Antonio,Arial,sans-serif}
+
+/* Bookingflow – visuelt design fra Hjemmeside design (Figma 189:307–189:572). */
+.booking-page{background:var(--yellow);color:var(--navy);font-family:Antonio,Arial,sans-serif}
+.booking-page .booking-container{width:min(calc(100% - 7rem),1138px);margin-inline:auto}
+.booking-page .booking-hero{padding:52px 0 28px;background:var(--yellow)}
+.booking-page .eyebrow{margin:0 0 .65rem;color:var(--navy);font:600 14px/1 Antonio,Arial,sans-serif;letter-spacing:.12em}
+.booking-page .booking-hero h1{margin:0 0 .55rem;background:linear-gradient(180deg,var(--navy),var(--purple));-webkit-background-clip:text;background-clip:text;color:transparent;font:400 clamp(2.6rem,5vw,3.5rem)/1 Creepster,Georgia,serif}
+.booking-page .booking-intro{margin:0;max-width:840px;background:linear-gradient(180deg,var(--navy),var(--purple));-webkit-background-clip:text;background-clip:text;color:transparent;font:400 17px/1.35 Antonio,Arial,sans-serif}
+.booking-page .demo-banner{max-width:888px;margin-top:1rem;padding:.7rem 1rem;border:1px solid #b8b8b8;border-radius:6px;background:rgba(255,255,255,.72);color:var(--navy);font:400 14px/1.35 Antonio,Arial,sans-serif}
+.booking-page .booking-section{padding:0 0 5rem;background:var(--yellow)}
+.booking-page .booking-steps{grid-template-columns:repeat(5,1fr);gap:12px;margin:0 0 30px}
+.booking-page .booking-steps button{min-height:62px;padding:.75rem .8rem;border:1px solid #b8b8b8;border-radius:6px;background:#fff;color:#242424;text-align:left;font:600 14px/1.2 Antonio,Arial,sans-serif}
+.booking-page .booking-steps .is-current button{border-color:#b8b8b8;background:var(--gradient);color:#fff}
+.booking-page .booking-steps button:disabled{opacity:1}
+.booking-page .booking-card{min-height:602px;padding:32px 40px 36px;border:1px solid #b8b8b8;border-radius:8px;background:var(--gradient);color:var(--yellow)}
+.booking-page .step-heading{margin-bottom:1.45rem}
+.booking-page .step-heading h2{margin:0 0 .45rem;color:var(--yellow);font:600 25px/1 Antonio,Arial,sans-serif}
+.booking-page .step-heading p{margin:0;color:var(--yellow);font:400 17px/1.35 Antonio,Arial,sans-serif}
+.booking-page .ticket-options{gap:19px}
+.booking-page .ticket-option{grid-template-columns:105px 1fr auto;gap:16px;min-height:115px;padding:16px;border:1px solid #b8b8b8;border-radius:8px;background:#f6f6f6;color:#242424}
+.booking-page .ticket-placeholder{width:105px;height:83px;border-radius:4px;background:#e8e8e8}
+.booking-page .ticket-option strong{font:600 20px/1.2 Antonio,Arial,sans-serif}
+.booking-page .ticket-option small{margin-top:.45rem;color:#666;font:400 15px/1.25 Antonio,Arial,sans-serif}
+.booking-page .quantity{gap:10px}
+.booking-page .quantity button{width:43px;height:42px;border:1px solid #b8b8b8;border-radius:6px;background:#fff;color:#242424;font:600 20px/1 Antonio,Arial,sans-serif}
+.booking-page .quantity output{min-width:28px;color:#242424;font:600 18px/1 Antonio,Arial,sans-serif}
+.booking-page .step-actions{margin-top:28px}
+.booking-page .primary,.booking-page .secondary,.booking-page .test-data{min-height:52px;padding:.85rem 1.1rem;border:1px solid #b8b8b8;border-radius:6px;font:600 17px/1 Antonio,Arial,sans-serif}
+.booking-page .primary{background:var(--gradient);color:#fff}
+.booking-page .secondary{background:var(--yellow);color:#242424}
+.booking-page .two-column{grid-template-columns:1fr 1fr;gap:34px}
+.booking-page .calendar{padding:18px;border:1px solid #b8b8b8;border-radius:6px;background:#f6f6f6;color:#242424;font:400 13px/1.2 Antonio,Arial,sans-serif}
+.booking-page .calendar>strong{display:block;font:600 17px/1.2 Antonio,Arial,sans-serif}
+.booking-page .calendar-week{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:6px;margin:18px 0 10px;color:#242424;text-align:center;font:400 13px/1 Antonio,Arial,sans-serif}
+.booking-page .calendar-week span{min-width:0;white-space:nowrap}
+.booking-page .calendar-days{gap:6px}
+.booking-page .calendar-days span{min-height:36px}
+.booking-page .calendar-days button,.booking-page .time-options button{height:36px;border:1px solid #b8b8b8;border-radius:5px;background:#fff;color:#242424;font:600 14px/1 Antonio,Arial,sans-serif}
+.booking-page .calendar-days button.selected,.booking-page .time-options button.selected{border-color:var(--navy);background:var(--navy);color:#fff}
+.booking-page .time-options{gap:14px 12px}
+.booking-page .time-options button{width:100%;height:56px;display:flex;align-items:center;justify-content:center;border-radius:6px}
+.booking-page .selection-note{color:var(--yellow);font:400 16px/1.35 Antonio,Arial,sans-serif}
+.booking-page .form-fields{gap:0;max-width:none}
+.booking-page .form-fields label,.booking-page .payment-layout label{margin:0 0 .45rem;color:var(--yellow);font:600 16px/1.2 Antonio,Arial,sans-serif}
+.booking-page .form-fields input,.booking-page .payment-layout>div>input{margin:0 0 1.25rem;padding:.85rem 1rem;border:1px solid #b8b8b8;border-radius:6px;background:#fff;color:#242424;font:400 15px/1 Antonio,Arial,sans-serif}
+.booking-page .checkbox{display:flex!important;gap:8px;align-items:flex-start;margin-top:.2rem!important;color:var(--yellow)!important;font-size:15px!important}
+.booking-page .checkbox input{width:auto;margin:.1rem 0 0}
+.booking-page .test-data{position:absolute;right:0;top:0;min-height:0;padding:.55rem .75rem;background:var(--yellow);color:#242424;font-size:14px}
+.booking-page .payment-layout{align-items:start}
+.booking-page .payment-choice{min-height:47px;margin:8px 0;padding:.75rem 1rem;border:1px solid #b8b8b8;border-radius:6px;background:#f6f6f6;color:#242424;font:600 16px/1 Antonio,Arial,sans-serif}
+.booking-page .payment-choice::before{content:'';display:inline-block;flex:0 0 15px;width:15px;height:15px;margin-right:9px;border:2px solid #242424;border-radius:50%;background:#fff;vertical-align:-3px}
+.booking-page .payment-choice[aria-pressed="true"]{border-color:var(--yellow);background:var(--yellow);color:#242424}
+.booking-page .payment-choice[aria-pressed="true"]::before{border-color:var(--navy);box-shadow:inset 0 0 0 3px #fff;background:var(--navy)}
+.booking-page .order-summary{padding:18px;border:1px solid #b8b8b8;border-radius:6px;background:#f6f6f6;color:#242424}
+.booking-page .order-summary h3{margin:0 0 1rem;color:#242424;font:600 20px/1.2 Antonio,Arial,sans-serif}
+.booking-page .order-summary dl{font:400 14px/1.35 Antonio,Arial,sans-serif}
+.booking-page .order-summary dl div{padding:.42rem 0;border-bottom:1px solid #bfbfbf}
+.booking-page .order-summary p,.booking-page .demo-note{color:var(--yellow);font:400 14px/1.35 Antonio,Arial,sans-serif}
+.booking-page .form-error{margin:1rem 0;color:#fff;font:600 16px/1.3 Antonio,Arial,sans-serif}
+.booking-page .confirmation{text-align:center}
+.booking-page .confirmation .check{width:110px;height:110px;margin:18px auto 32px;border:1px solid #b8b8b8;border-radius:55px;background:#e8e8e8;color:#242424;font:600 55px/108px Antonio,Arial,sans-serif}
+.booking-page .confirmation h2{margin:0 0 1rem;color:var(--yellow);font:600 30px/1.2 Antonio,Arial,sans-serif}
+.booking-page .confirmation>p{margin:0 auto 1.3rem;color:var(--yellow);font:400 17px/1.35 Antonio,Arial,sans-serif}
+.booking-page .confirmation .order-summary{width:min(100%,528px);margin:0 auto 28px;text-align:left}
+.booking-page .confirmation .button{display:inline-block}
+
+@media(max-width:900px){.booking-page .booking-container{width:min(calc(100% - 3rem),720px)}.booking-page .booking-card{padding:28px 24px}.booking-page .ticket-option{grid-template-columns:84px 1fr auto}.booking-page .ticket-placeholder{width:84px;height:72px}}
+@media(max-width:760px){.booking-page .booking-container{width:min(calc(100% - 1.5rem),600px)}.booking-page .booking-hero{padding-top:34px}.booking-page .booking-hero h1{font-size:clamp(2.45rem,11vw,3.5rem)}.booking-page .booking-intro{font-size:16px}.booking-page .booking-steps{grid-template-columns:1fr 1fr;gap:8px;margin-bottom:18px}.booking-page .booking-steps li:last-child{grid-column:1/-1}.booking-page .booking-steps button{min-height:54px}.booking-page .booking-card{min-height:0;padding:24px 16px 28px}.booking-page .ticket-option{grid-template-columns:1fr auto;gap:10px;padding:12px}.booking-page .ticket-placeholder{display:none}.booking-page .ticket-option small{font-size:14px}.booking-page .quantity{grid-column:1/-1;justify-content:flex-end}.booking-page .two-column{grid-template-columns:1fr;gap:24px}.booking-page .time-options{gap:10px 8px}.booking-page .time-options button{height:50px}.booking-page .test-data{position:static;margin-top:.8rem}.booking-page .step-actions{flex-wrap:wrap}.booking-page .step-actions .primary,.booking-page .step-actions .secondary{flex:1}.booking-page .confirmation .check{margin-top:0}}
+@media(max-width:760px){.hero-copy{font-size:18px;line-height:1.5}.experience-copy,.intro-copy,.practical-intro-copy,.about-intro-copy,.history-copy,.team-copy,.values-copy{font-size:18px;line-height:1.45}.faq-intro-copy{font-size:17px;line-height:1.45}}
