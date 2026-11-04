@@ -40,17 +40,18 @@
 /* Bookingflow – visuelt design fra Hjemmeside design (Figma 189:307–189:572). */
 .booking-page{background:var(--yellow);color:var(--navy);font-family:Antonio,Arial,sans-serif}
 .booking-page .booking-container{width:min(calc(100% - 7rem),1138px);margin-inline:auto}
+.booking-page .booking-hero .booking-container{width:min(888px,100%)}
 .booking-page .booking-hero{padding:52px 0 28px;background:var(--yellow)}
 .booking-page .eyebrow{margin:0 0 .65rem;color:var(--navy);font:600 14px/1 Antonio,Arial,sans-serif;letter-spacing:.12em}
 .booking-page .booking-hero h1{margin:0 0 .55rem;background:linear-gradient(180deg,var(--navy),var(--purple));-webkit-background-clip:text;background-clip:text;color:transparent;font:400 clamp(2.6rem,5vw,3.5rem)/1 Creepster,Georgia,serif}
 .booking-page .booking-intro{margin:0;max-width:840px;background:linear-gradient(180deg,var(--navy),var(--purple));-webkit-background-clip:text;background-clip:text;color:transparent;font:400 17px/1.35 Antonio,Arial,sans-serif}
 .booking-page .demo-banner{max-width:888px;margin-top:1rem;padding:.7rem 1rem;border:1px solid #b8b8b8;border-radius:6px;background:rgba(255,255,255,.72);color:var(--navy);font:400 14px/1.35 Antonio,Arial,sans-serif}
 .booking-page .booking-section{padding:0 0 5rem;background:var(--yellow)}
-.booking-page .booking-steps{grid-template-columns:repeat(5,1fr);gap:12px;margin:0 0 30px}
+.booking-page .booking-steps{width:min(902px,100%);grid-template-columns:repeat(5,166px);gap:18px;margin:0 auto 30px}
 .booking-page .booking-steps button{min-height:62px;padding:.75rem .8rem;border:1px solid #b8b8b8;border-radius:6px;background:#fff;color:#242424;text-align:left;font:600 14px/1.2 Antonio,Arial,sans-serif}
 .booking-page .booking-steps .is-current button{border-color:#b8b8b8;background:var(--gradient);color:#fff}
 .booking-page .booking-steps button:disabled{opacity:1}
-.booking-page .booking-card{min-height:602px;padding:32px 40px 36px;border:1px solid #b8b8b8;border-radius:8px;background:var(--gradient);color:var(--yellow)}
+.booking-page .booking-card{width:min(888px,100%);margin-inline:auto;min-height:602px;padding:32px 32px 36px;border:1px solid #b8b8b8;border-radius:8px;background:var(--gradient);color:var(--yellow)}
 .booking-page .step-heading{margin-bottom:1.45rem}
 .booking-page .step-heading h2{margin:0 0 .45rem;color:var(--yellow);font:600 25px/1 Antonio,Arial,sans-serif}
 .booking-page .step-heading p{margin:0;color:var(--yellow);font:400 17px/1.35 Antonio,Arial,sans-serif}
@@ -102,8 +103,10 @@
 .booking-page .confirmation .order-summary{width:min(100%,528px);margin:0 auto 28px;text-align:left}
 .booking-page .confirmation .button{display:inline-block}
 
-@media(max-width:900px){.booking-page .booking-container{width:min(calc(100% - 3rem),720px)}.booking-page .booking-card{padding:28px 24px}.booking-page .ticket-option{grid-template-columns:84px 1fr auto}.booking-page .ticket-placeholder{width:84px;height:72px}}
+@media(max-width:900px){.booking-page .booking-container{width:min(calc(100% - 3rem),720px)}.booking-page .booking-steps{width:100%;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px}.booking-page .booking-card{padding:28px 24px}.booking-page .ticket-option{grid-template-columns:84px 1fr auto}.booking-page .ticket-placeholder{width:84px;height:72px}}
 @media(max-width:760px){.booking-page .booking-container{width:min(calc(100% - 1.5rem),600px)}.booking-page .booking-hero{padding-top:34px}.booking-page .booking-hero h1{font-size:clamp(2.45rem,11vw,3.5rem)}.booking-page .booking-intro{font-size:16px}.booking-page .booking-steps{grid-template-columns:1fr 1fr;gap:8px;margin-bottom:18px}.booking-page .booking-steps li:last-child{grid-column:1/-1}.booking-page .booking-steps button{min-height:54px}.booking-page .booking-card{min-height:0;padding:24px 16px 28px}.booking-page .ticket-option{grid-template-columns:1fr auto;gap:10px;padding:12px}.booking-page .ticket-placeholder{display:none}.booking-page .ticket-option small{font-size:14px}.booking-page .quantity{grid-column:1/-1;justify-content:flex-end}.booking-page .two-column{grid-template-columns:1fr;gap:24px}.booking-page .time-options{gap:10px 8px}.booking-page .time-options button{height:50px}.booking-page .test-data{position:static;margin-top:.8rem}.booking-page .step-actions{flex-wrap:wrap}.booking-page .step-actions .primary,.booking-page .step-actions .secondary{flex:1}.booking-page .confirmation .check{margin-top:0}}
+@media(max-width:900px){.booking-page .booking-hero .booking-container{width:min(calc(100% - 3rem),720px)}}
+@media(max-width:760px){.booking-page .booking-hero .booking-container{width:min(calc(100% - 1.5rem),600px)}}
 @media(max-width:760px){.hero-copy{font-size:18px;line-height:1.5}.experience-copy,.intro-copy,.practical-intro-copy,.about-intro-copy,.history-copy,.team-copy,.values-copy{font-size:18px;line-height:1.45}.faq-intro-copy{font-size:17px;line-height:1.45}}
 
 /* Diskret feedback på primære booking-CTA'er uden for selve bookingflowet. */
@@ -163,3 +166,33 @@
 }
 .hero-video-toggle{position:absolute;right:1.5rem;bottom:1.5rem;z-index:2;width:42px;height:42px;border:2px solid var(--yellow);border-radius:50%;background:rgba(0,5,61,.82);color:var(--yellow);font:600 18px/1 Antonio,Arial,sans-serif;cursor:pointer}.hero-video-toggle:hover{background:var(--purple)}.hero-video-toggle[aria-pressed="true"] span[aria-hidden="true"]{font-size:0}.hero-video-toggle[aria-pressed="true"] span[aria-hidden="true"]::after{content:'▶';font-size:16px}
 .hero{position:relative;isolation:isolate;overflow:hidden}.hero-video{position:absolute;inset:0;width:100%;height:100%;display:block;object-fit:cover;z-index:-1;pointer-events:none}.hero::after{content:'';position:absolute;inset:0;background:linear-gradient(#00000020,#00000055);z-index:0;pointer-events:none}.hero-content{position:relative;z-index:1}.hero-video-toggle{z-index:2}
+.site-header{position:sticky;top:0;z-index:20}.skip-link:focus{z-index:30}
+.booking-page .site-header{position:static}
+.site-nav .header-book,.booking-page .site-nav .button{display:inline-flex;min-width:174px;min-height:62px;align-items:center;justify-content:center;padding:.85rem 1.3rem;border-radius:20px;line-height:1;text-align:center}.site-nav .header-book{font-size:24px!important}
+.values-copy ul{display:block;list-style:disc;margin:.25rem 0 1rem;padding-left:2.2rem}.values-copy li{padding-left:.35rem;margin-bottom:.75rem}.values-copy li::marker{color:var(--navy);font-size:1.35em}.values-copy strong{font-family:Antonio,Arial,sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.02em}.values-copy li{font-weight:400}
+@media(max-width:760px){.site-nav .header-book,.booking-page .site-nav .button{min-width:155px;min-height:54px;padding:.7rem 1rem;font-size:21px!important}}
+@media(min-width:1024px){.brand img{width:79px;height:78px}}
+
+/* Kompakt tablet-bredde: brug de eksisterende mobile strukturer ved 768px. */
+@media (min-width:761px) and (max-width:768px){
+  .site-header{height:auto;min-height:80px}
+  .header-inner{flex-wrap:wrap}
+  .menu-toggle{display:block;background:transparent;border:2px solid var(--yellow);border-radius:8px;color:var(--white);padding:.5rem;font:1rem Antonio}
+  .site-nav{display:none;width:100%}
+  .site-nav.is-open{display:block}
+  .site-nav ul{display:grid;gap:.5rem;padding:1rem 0}
+  .site-nav a{font-size:20px}
+  .site-nav .header-book,.booking-page .site-nav .button{min-width:155px;min-height:54px;padding:.7rem 1rem;font-size:21px!important}
+
+  .experience.section{width:min(calc(100% - 2rem),600px);min-height:auto;padding:48px 0}
+  .experience.section h2{font-size:clamp(2.2rem,9vw,3.3rem);line-height:1.1}
+  .experience-grid{display:grid;grid-template-columns:1fr}
+  .experience-copy{font-size:25px;line-height:1.45}
+  .experience-image{position:static;width:100%;height:360px}
+
+  .practical-narrow{width:min(calc(100% - 2rem),600px)}
+  .map-address{grid-template-columns:1fr;gap:1.5rem}
+  .map-wrap{width:100%;height:auto;aspect-ratio:522/449}
+  .address-copy>p{font-size:36px}
+  .address-copy .button{font-size:24px}
+}
