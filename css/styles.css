@@ -177,12 +177,6 @@
 @media (min-width:761px) and (max-width:768px){
   .site-header{height:auto;min-height:80px}
   .header-inner{flex-wrap:wrap}
-  .menu-toggle{display:block;background:transparent;border:2px solid var(--yellow);border-radius:8px;color:var(--white);padding:.5rem;font:1rem Antonio}
-  .site-nav{display:none;width:100%}
-  .site-nav.is-open{display:block}
-  .site-nav ul{display:grid;gap:.5rem;padding:1rem 0}
-  .site-nav a{font-size:20px}
-  .site-nav .header-book,.booking-page .site-nav .button{min-width:155px;min-height:54px;padding:.7rem 1rem;font-size:21px!important}
 
   .experience.section{width:min(calc(100% - 2rem),600px);min-height:auto;padding:48px 0}
   .experience.section h2{font-size:clamp(2.2rem,9vw,3.3rem);line-height:1.1}
@@ -286,4 +280,29 @@
 }
 @media (max-width:768px) and (prefers-reduced-motion:reduce){
   .menu-toggle::before,.menu-toggle::after{transition:none}
+}
+
+/* Forsiden bruger mobilens fungerende header-, menu- og hero-layout ved 768px. */
+@media (min-width:761px) and (max-width:768px){
+  body:has(.hero) .site-header{height:auto;min-height:80px}
+  body:has(.hero) .header-inner{flex-wrap:wrap}
+  .menu-toggle{display:block;background:transparent;border:2px solid var(--yellow);border-radius:8px;color:var(--white);padding:.5rem;font:1rem Antonio;font-size:0;line-height:0}
+  .menu-toggle::before,.menu-toggle::after{width:26px;height:3px}
+  .site-nav{display:none;width:100%}
+  .site-nav.is-open{display:block}
+  .site-nav ul{display:grid;gap:.5rem;padding:1rem 0}
+  .site-nav a{font-size:20px}
+  .site-nav .header-book{min-width:155px;min-height:54px;padding:.7rem 1rem;font-size:21px!important}
+  body:has(.hero) .hero{min-height:0;background:var(--yellow)}
+  body:has(.hero) .hero-video{position:absolute;inset:0 0 auto;height:360px;object-fit:cover}
+  body:has(.hero) .hero-content{position:relative;top:auto;width:100%;margin:360px 0 0;padding:32px 20px 28px;border-radius:0;transform:none}
+  body:has(.hero) .hero h1{font-size:clamp(3.4rem,15vw,5.5rem);line-height:.9}
+  body:has(.hero) .hero-copy{font-size:18px;line-height:1.45}
+  body:has(.hero) .hero-actions{gap:.75rem}
+  body:has(.hero) .hero-actions .button{font-size:20px}
+  body:has(.hero) .hero-video-toggle{top:1.5rem;bottom:auto}
+}
+
+@media (min-width:881px) and (max-width:900px){
+  .experience.section{min-height:1094px}
 }
